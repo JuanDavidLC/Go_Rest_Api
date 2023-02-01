@@ -20,7 +20,7 @@ func initRoutes() {
 
 		default:
 			w.WriteHeader(http.StatusMethodNotAllowed)
-			fmt.Fprintf(w, "Methos not allowes")
+			fmt.Fprintf(w, "Method not allowed")
 			return
 		}
 
