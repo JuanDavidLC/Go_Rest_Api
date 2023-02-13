@@ -59,6 +59,7 @@ func GetUsers() ([]User, error) {
 	if err != nil {
 		return nil, err
 	}
+	defer rows.Close()
 
 	users := []User{}
 	for rows.Next() {
